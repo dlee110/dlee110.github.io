@@ -1,0 +1,36 @@
+.contestformTitle {
+	@include outer-container;
+	@include pad(1rem);
+	margin-top: 100px;
+	h1 {
+		color: #bababa;
+		font-size: 4rem;
+		text-align: center;
+	}
+}
+
+.contestForm {
+	@include outer-container;
+	aside {
+		@include span-columns(3);
+		border: 1px solid #888;
+		height: 50px;
+		padding: 12px 0 0 15px;
+	}
+	.formHolder {
+		@include span-columns(9);
+		@include pad();
+		border: 1px solid #888;
+		margin-bottom: 50px;
+		.field {
+			@include span-columns(6 of 8);
+			@include shift(1);
+			> input {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.upload {
+		margin-bottom: 100px;
+	}
+}

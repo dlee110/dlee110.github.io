@@ -1,0 +1,44 @@
+.pglTitle {
+	@include outer-container;
+	margin-top: 100px;
+	h1 {
+		color: #bababa;
+		font-size: 4rem;
+		text-align: left;
+	}
+}
+
+.pgltrailerContainer {
+	@include outer-container;
+	margin-bottom: 50px;
+	border-bottom: 1px solid #bababa;
+	.pgltrailerYoutube {
+		@include span-columns(9);
+		margin-bottom: 70px;
+	}
+	.pglDesc {
+		@include span-columns(3);
+		> button {
+			margin-top: 20px;
+		}
+	}
+}
+
+.pglRelated {
+	@include outer-container;
+	margin-bottom: 50px;
+	> h2 {
+		font-size: 1.5em;
+	}
+
+	.greenlightThumbnail {
+		@include span-columns (3);
+	}
+	
+	.greenlightDesc {
+		@include span-columns (9);
+		@include omega();
+		margin-bottom: 40px;
+	}
+}
+

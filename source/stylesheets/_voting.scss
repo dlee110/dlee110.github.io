@@ -1,0 +1,61 @@
+.hero{
+  background-image:url(http://placehold.it/1920x1080);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+.header{
+  position: solute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 36px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+   	-webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+}
+
+.contestTitle {
+	@include outer-container;
+	@include pad(1rem);
+	margin-top: 4rem;
+
+	h1 {
+		color: #bababa;
+		font-size: 4rem;
+	}
+}
+
+.submissionBox {
+	@include outer-container;
+	@include pad(1rem);
+	border: solid 1px #bababa;
+	height: 50rem;
+	margin-bottom: 100px;
+	> p {
+		margin-bottom: 20px;
+	}
+
+	.submissionContainer {
+		@include outer-container;
+
+		.submissionVideo {
+			@include span-columns(3);
+			@include omega(4n);
+			height: 115px;
+			margin-bottom: 20px;
+			background-image: url("http://placehold.it/253x115&text=Submission+Video");
+		}
+	}
+
+	.viewallButton {
+		@include span-columns(12);
+		button {
+			display: block;
+			margin: 175px auto 0;
+		}
+	}
+}	

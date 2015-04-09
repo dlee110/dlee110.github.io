@@ -1,0 +1,44 @@
+.loginTitle {
+	@include outer-container;
+	@include pad(1rem);
+	margin-top: 100px;
+	h1 {
+		color: #bababa;
+		font-size: 4rem;
+		text-align: center;
+	}
+}
+
+.loginContainer {
+	@include outer-container;
+	margin-bottom: 100px;
+
+	.loginForm {
+		@include span-columns (6);
+		@include shift(3);
+		@include pad();
+		border: 1px solid #bababa;
+
+		.border {
+		margin: 20px 0;
+		border-bottom: 1px solid #bababa;
+		}
+
+		.passwordForm {
+			margin-bottom: 50px;
+		}
+
+		> button {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		> a {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+		}
+	}
+
+}

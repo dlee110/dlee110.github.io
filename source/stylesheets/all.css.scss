@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@import "bourbon";
+@import "base/base";   /* Bitters needs to be imported before Neat */
+@import "neat";
+@import "nav";
+@import "footer";
+@import "ods";
+@import "contestform";
+@import "confirmation";
+@import "pglseries";
+@import "voting";
+@import "viewsub";
+@import "login";
+
+.hero{
+  background-image:url(http://placehold.it/1920x1080);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+}
+
+.header{
+  position: solute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 36px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+   	-webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);  
+}
+
+
+.contestTitle {
+	@include outer-container;
+	@include pad(1rem);
+	margin-top: 4rem;
+
+	h1 {
+		color: #bababa;
+		font-size: 4rem;
+	}
+}
+
+.contestContainer {
+	@include outer-container;
+	@include pad(1rem);
+	border: solid 1px #bababa;
+	height: 50rem;
+	margin-bottom: 100px;
+
+	.contestDescription {
+		@include span-columns(8);
+		padding-right: 20px;
+		h2 {
+			margin: 20px 0;
+			font-size: 2rem;
+		}
+	}
+
+	.contestRules {
+		@include span-columns(4);
+		@include omega;
+		h3 {
+			margin: 20px 0;
+		}
+	}
+	.contestEnter {
+		@include span-columns(12);
+		button {
+			display: block;
+			margin: 175px auto 0;
+		}
+	}
+}
+
+
