@@ -18,3 +18,7 @@ gem 'rack-contrib'
 gem 'bitters'
 gem 'bourbon'
 gem 'neat'
+
+gem 'middleman-gh-pages'
+gem 'middleman-deploy', '~> 1.0'
+gem "builder", "~> 3.0"
